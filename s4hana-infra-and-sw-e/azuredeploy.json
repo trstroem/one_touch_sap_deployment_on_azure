@@ -261,7 +261,7 @@
                 "autoUpgradeMinorVersion": true,
                 "settings": {
                     "fileUris": [
-                        "https://raw.githubusercontent.com/sanjeevkumar761/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw-e/scripts/hello.sh"
+                        "https://raw.githubusercontent.com/trstroem/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw-e/scripts/hello.sh"
                     ],
                     "commandToExecute": "[concat('sudo sh hello.sh ', variables('subscriptionId') , ' ' , variables('clientId') ,  ' ' , variables('clientSecret') ,  ' ' , variables('tenantId') ,  ' ' , variables('rg') ,  ' ' , variables('location') , ' ' , variables('vNetName') ,  ' ' , variables('subNetName') ,   ' ' , variables('vNetAddressSpace') ,  ' ' , variables('subnetAddressSpace') ,  ' ' , variables('hanadbIp') ,  ' ' , variables('pasIp') ,  ' '  , variables('bastionAddressSpace'),  ' '  , variables('createAzureBastion'), ' &' )]"
                 }
