@@ -1,6 +1,6 @@
 cd /home/juser
 sudo su
-git clone https://sanjeku@dev.azure.com/sanjeku/sap-infra-devops/_git/souvenir
+git clone https://dev.azure.com/trstroemTestOrg/_git/souvenir3
 cat /dev/zero | ssh-keygen -q -N "" > /dev/null
 echo 'test log' >> /home/juser/terraform.log
 echo 'test log' >> /home/juser/ansible.log
