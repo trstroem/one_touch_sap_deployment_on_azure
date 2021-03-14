@@ -4,6 +4,6 @@
     "itemDisplayName": "Deploy single node HANA with infrastructure and software in Azure",
     "description": "This template deploys single node HANA with infrastructure and software in Azure",
     "summary": "Deploy single node HANA with infrastructure and software in Azure",
-    "githubUsername": "sanjeevkumar761",
+    "githubUsername": "trstroem",
     "dateUpdated": "2020-06-10"
     }
