@@ -13,10 +13,10 @@ If you use exitsing Service Principal, please make sure to copy appId and passwo
 
 While deploying to Azure, make sure to select existing resource group, vNet and subNet (for SAP workload) which you would have created as mentioned in above section. 
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://ms.portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fsanjeevkumar761%2Fone_touch_sap_deployment_on_azure%2Fmaster%2Fs4hana-infra-and-sw-e%2Fazuredeploy.json)  
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://ms.portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftrstroem%2Fone_touch_sap_deployment_on_azure%2Fmaster%2Fs4hana-infra-and-sw-e%2Fazuredeploy.json)  
 
 Altrenatively, yon can initiate the deployment using Azure CLI. The command is:   
-az deployment group create --resource-group <resource group name> --template-uri <path to souvenir azuredploy.json which is  https://raw.githubusercontent.com/sanjeevkumar761/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw-e/azuredeploy.json >  --parameters vNetNewOrExisting=existing virtualNetworkName=<vnet name> subnetName=<subnet name> vmName=jumpboxlinux servicePrincipalAppId=<appId> servicePrincipalPassword=<password>
+az deployment group create --resource-group <resource group name> --template-uri <path to souvenir azuredploy.json which is  https://raw.githubusercontent.com/trstroem/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw-e/azuredeploy.json >  --parameters vNetNewOrExisting=existing virtualNetworkName=<vnet name> subnetName=<subnet name> vmName=jumpboxlinux servicePrincipalAppId=<appId> servicePrincipalPassword=<password>
 
 ## How to check installation progress:   
 1\) Wait for initial deployment to complete in Azure portal. You'll see the message "Your deployment is complete" in Azure portal. It deploys a jumpbox on Azure  
@@ -27,7 +27,7 @@ az deployment group create --resource-group <resource group name> --template-uri
 
 ## Connect using SAP GUI:        
 1\) Logon to Windows jumpbox (installed automatically as part of the installation process)    
-2\) Download file "sapgui-download-extract.ps1" from here https://raw.githubusercontent.com/sanjeevkumar761/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw/scripts/sapgui-download-extract.ps1   (This step will take about 10-15 minutes)  
+2\) Download file "sapgui-download-extract.ps1" from here https://raw.githubusercontent.com/trstroem/one_touch_sap_deployment_on_azure/master/s4hana-infra-and-sw/scripts/sapgui-download-extract.ps1   (This step will take about 10-15 minutes)  
 3\) Open Powershell and cd into directory "C:\Users\juser"  
 4\) Run powershell script by typing on command line "sapgui-download-extract.ps1" and hit Enter  
 5\) Wait for SAP GUI zip file for download and extract SAP GUI software. It will start SAP GUI installer    
